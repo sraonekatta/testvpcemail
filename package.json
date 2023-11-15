@@ -1,0 +1,32 @@
+{
+  "name": "email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "clean:dist": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -r dotenv/config ./src/app.ts",
+    "start:prod": "node .",
+    "build": "npm run clean:dist && tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.9.0",
+    "config": "^3.3.9",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.3",
+    "rimraf": "^5.0.5",
+    "tslib": "^2.6.2"
+  }
+}
